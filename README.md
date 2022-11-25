@@ -1,8 +1,8 @@
 # Cars
-Design Pattern Project
+##Design Pattern Project
 
-Strategy Patttern
-Decorator Pattern
-Observer Pattern
-Factory 
+<p>Strategy Patttern</p>
+<p>Decorator Pattern</p>
+<p>Observer Pattern</p>
+<p>Factory</p> 
 
