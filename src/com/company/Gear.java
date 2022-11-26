@@ -1,6 +1,7 @@
 package com.company;
 
-public interface Gear {
+public abstract class Gear {
+    public boolean clutch = false; //debriyaj
 
-    boolean clutch = false; //debriyaj
+    public abstract void gear();
 }
