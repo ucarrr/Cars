@@ -90,4 +90,20 @@ public class MainBody {
     public void setAirbag(boolean airbag) {
         this.airbag = airbag;
     }
+
+    @Override
+    public String toString() {
+        return "MainBody{" +
+                "numberOfWheels=" + numberOfWheels +
+                ", seatBelt=" + seatBelt +
+                ", accelerator=" + accelerator +
+                ", doorNumber=" + doorNumber +
+                ", numberOfSeat=" + numberOfSeat +
+                ", bodyType='" + bodyType + '\'' +
+                ", gasTank=" + gasTank +"lt" +
+                ", carStereo='" + carStereo + '\'' +
+                ", Trunk=" + Trunk +
+                ", airbag=" + airbag +
+                '}';
+    }
 }

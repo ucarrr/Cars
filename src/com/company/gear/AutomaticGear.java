@@ -7,4 +7,11 @@ public class AutomaticGear extends Gear {
     public void gear() {
         System.out.println("It has automatic gear");
     }
+
+    @Override
+    public String toString() {
+        return "AutomaticGear{" +
+                "clutch=" + clutch +
+                '}';
+    }
 }
