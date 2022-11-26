@@ -4,18 +4,90 @@ public class MainBody {
     private final int numberOfWheels = 4;
     private final boolean seatBelt = true;
     private final boolean accelerator = true;
-    private Engine engine;
     private int doorNumber;
     private int numberOfSeat;
-    private Gear gear; //vites
     private String bodyType; //sedan etc.
     private int gasTank;
     private String carStereo;
-    private Brake brake;
     private boolean Trunk; //Bagaj
     private boolean airbag;
 
+    public MainBody(int doorNumber, int numberOfSeat, String bodyType,
+                    int gasTank, String carStereo, boolean trunk, boolean airbag) {
+        this.doorNumber = doorNumber;
+        this.numberOfSeat = numberOfSeat;
+        this.bodyType = bodyType;
+        this.gasTank = gasTank;
+        this.carStereo = carStereo;
+        Trunk = trunk;
+        this.airbag = airbag;
+    }
 
+    public int getNumberOfWheels() {
+        return numberOfWheels;
+    }
 
+    public boolean isSeatBelt() {
+        return seatBelt;
+    }
 
+    public boolean isAccelerator() {
+        return accelerator;
+    }
+
+    public int getDoorNumber() {
+        return doorNumber;
+    }
+
+    public void setDoorNumber(int doorNumber) {
+        this.doorNumber = doorNumber;
+    }
+
+    public int getNumberOfSeat() {
+        return numberOfSeat;
+    }
+
+    public void setNumberOfSeat(int numberOfSeat) {
+        this.numberOfSeat = numberOfSeat;
+    }
+
+    public String getBodyType() {
+        return bodyType;
+    }
+
+    public void setBodyType(String bodyType) {
+        this.bodyType = bodyType;
+    }
+
+    public int getGasTank() {
+        return gasTank;
+    }
+
+    public void setGasTank(int gasTank) {
+        this.gasTank = gasTank;
+    }
+
+    public String getCarStereo() {
+        return carStereo;
+    }
+
+    public void setCarStereo(String carStereo) {
+        this.carStereo = carStereo;
+    }
+
+    public boolean isTrunk() {
+        return Trunk;
+    }
+
+    public void setTrunk(boolean trunk) {
+        Trunk = trunk;
+    }
+
+    public boolean isAirbag() {
+        return airbag;
+    }
+
+    public void setAirbag(boolean airbag) {
+        this.airbag = airbag;
+    }
 }

@@ -1,4 +1,10 @@
 package com.company.enginetypes.enginecylinderstype;
 
-public class FourCylinderEngines {
+import com.company.enginetypes.EngineCylindersType;
+
+public class FourCylinderEngines implements EngineCylindersType {
+    @Override
+    public void cylindersType() {
+        System.out.println("Engine is 5 Cylinder");
+    }
 }

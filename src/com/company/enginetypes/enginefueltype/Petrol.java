@@ -1,4 +1,9 @@
 package com.company.enginetypes.enginefueltype;
 
-public class Petrol {
+import com.company.enginetypes.EngineFuelType;
+
+public class Petrol implements EngineFuelType {
+    @Override
+    public void fuelType() {
+        System.out.println("Fuel is Petrol");    }
 }
