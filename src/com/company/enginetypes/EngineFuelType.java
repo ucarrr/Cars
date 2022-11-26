@@ -1,4 +1,4 @@
-package com.company;
+package com.company.enginetypes;
 
 
 //Engine Types According to Fuel Burned
