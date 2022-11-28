@@ -1,19 +1,23 @@
 package com.company;
 
-public class Mercedes extends Car{
+public class Mercedes extends Car {
     private String model;
     private String serial;
     private int year;
     private String color;
+    private double cost;
 
-
-    public Mercedes(MainBody mainBody, Brake brake, Gear gear, Engine engine, String model, String serial, int year, String color) {
+    public Mercedes(MainBody mainBody, Brake brake, Gear gear, Engine engine, String model, String serial,
+                    int year, String color, double cost, String description) {
         super(mainBody, brake, gear, engine);
         this.model = model;
         this.serial = serial;
         this.year = year;
         this.color = color;
+        this.cost = cost;
+        this.description = description;
     }
+
 
     public String getModel() {
         return model;
@@ -49,7 +53,7 @@ public class Mercedes extends Car{
 
     @Override
     public double cost() {
-        return 0;
+        return cost;
     }
 
     @Override

@@ -7,6 +7,8 @@ import com.company.enginetypes.EnginesReactType;
 import com.company.enginetypes.enginecylinderstype.FiveCylinderEngine;
 import com.company.enginetypes.enginefueltype.Diesel;
 import com.company.enginetypes.enginereacttype.InternalCombustionSystem;
+import com.company.extension.CarExtensionDecorator;
+import com.company.extension.Roof;
 import com.company.gear.AutomaticGear;
 import com.company.gear.Gear6;
 import com.company.gear.ManuelGear;
@@ -25,10 +27,15 @@ public class Main {
         Brake brake=new ASRBrakeSystem();
 
         Car mercedesSedan=new Mercedes(mainBody,brake,automaticGear,engine,"S400","s",2022,
-                 "Black");
+                 "Black",200000,"mercedes");
+
+        CarExtensionDecorator roof=new Roof(mainBody,brake,automaticGear,engine,mercedesSedan);
+        System.out.println(mercedesSedan);
+        System.out.println(roof.description()+ roof.cost());
+        System.out.println(mercedesSedan.cost());
 
 
-        System.out.println( mercedesSedan.getEngine());
+        /*System.out.println( mercedesSedan.getEngine());
         System.out.println( mercedesSedan.getGear());
         mercedesSedan.getGear().gear();
 
@@ -38,7 +45,7 @@ public class Main {
         mercedesSedan.getEngine().getEngineCylindersType().cylindersType();
         mercedesSedan.getEngine().getEnginesReactType().reactType();
         mercedesSedan.getBrake().brake();
-
+*/
 
 
 

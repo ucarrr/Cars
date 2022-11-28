@@ -1,27 +1,18 @@
 package com.company;
 
-public abstract class Car {
-
+public class CarAssembly {
     private MainBody mainBody;
     private Brake brake;
     private Gear gear;
     private Engine engine;
-    String description="Unknown description";
+    private Car car;
 
-
-
-    public Car(MainBody mainBody, Brake brake, Gear gear, Engine engine) {
+    public CarAssembly(MainBody mainBody, Brake brake, Gear gear, Engine engine, Car car) {
         this.mainBody = mainBody;
         this.brake = brake;
         this.gear = gear;
         this.engine = engine;
-    }
-
-
-    public abstract double cost ();
-
-    public String description(){
-        return description();
+        this.car = car;
     }
 
     public MainBody getMainBody() {
@@ -56,13 +47,11 @@ public abstract class Car {
         this.engine = engine;
     }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "mainBody=" + mainBody +
-                ", brake=" + brake +
-                ", gear=" + gear +
-                ", engine=" + engine +
-                '}';
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
     }
 }
