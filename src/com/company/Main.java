@@ -24,20 +24,20 @@ public class Main {
         Gear gear6=new Gear6();
         Brake brake=new ASRBrakeSystem();
 
-        Car ssedan=new Mercedes(mainBody,brake,automaticGear,engine,"S400","s",2022,
+        Car mercedesSedan=new Mercedes(mainBody,brake,automaticGear,engine,"S400","s",2022,
                  "Black");
 
 
-        System.out.println( ssedan.getEngine());
-        System.out.println( ssedan.getGear());
-        ssedan.getGear().gear();
+        System.out.println( mercedesSedan.getEngine());
+        System.out.println( mercedesSedan.getGear());
+        mercedesSedan.getGear().gear();
 
-        System.out.println(ssedan.getMainBody().toString());
-        System.out.println(ssedan.toString());
-        ssedan.getEngine().getEngineFuelType().fuelType();
-        ssedan.getEngine().getEngineCylindersType().cylindersType();
-        ssedan.getEngine().getEnginesReactType().reactType();
-        ssedan.getBrake().brake();
+        System.out.println(mercedesSedan.getMainBody().toString());
+        System.out.println(mercedesSedan.toString());
+        mercedesSedan.getEngine().getEngineFuelType().fuelType();
+        mercedesSedan.getEngine().getEngineCylindersType().cylindersType();
+        mercedesSedan.getEngine().getEnginesReactType().reactType();
+        mercedesSedan.getBrake().brake();
 
 
 

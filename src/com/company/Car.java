@@ -1,11 +1,13 @@
 package com.company;
 
-public class Car {
+public abstract class Car {
 
     private MainBody mainBody;
     private Brake brake;
     private Gear gear;
     private Engine engine;
+
+
 
     public Car(MainBody mainBody, Brake brake, Gear gear, Engine engine) {
         this.mainBody = mainBody;
@@ -13,6 +15,11 @@ public class Car {
         this.gear = gear;
         this.engine = engine;
     }
+
+
+    public abstract double cost ();
+
+    public abstract String description();
 
     public MainBody getMainBody() {
         return mainBody;
