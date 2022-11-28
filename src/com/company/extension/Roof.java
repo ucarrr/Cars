@@ -10,6 +10,7 @@ public class Roof extends CarExtensionDecorator{
         this.car = car;
     }
 
+
     @Override
     public double cost() {
         return car.cost() + 1500;

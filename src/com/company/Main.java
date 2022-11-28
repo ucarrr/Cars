@@ -29,9 +29,10 @@ public class Main {
         Car mercedesSedan=new Mercedes(mainBody,brake,automaticGear,engine,"S400","s",2022,
                  "Black",200000,"mercedes");
 
-        CarExtensionDecorator roof=new Roof(mainBody,brake,automaticGear,engine,mercedesSedan);
+
+        Car car1=new Roof(mercedesSedan.getMainBody(), mercedesSedan.getBrake(),mercedesSedan.getGear(),mercedesSedan.getEngine(),mercedesSedan);
         System.out.println(mercedesSedan);
-        System.out.println(roof.description()+ roof.cost());
+        System.out.println(car1.description()+ car1.cost());
         System.out.println(mercedesSedan.cost());
 
 

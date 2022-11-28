@@ -8,52 +8,24 @@ public abstract class Car {
     private Engine engine;
     String description="Unknown description";
 
+    public Car() {
 
-
-    public Car(MainBody mainBody, Brake brake, Gear gear, Engine engine) {
-        this.mainBody = mainBody;
-        this.brake = brake;
-        this.gear = gear;
-        this.engine = engine;
     }
 
-
-    public abstract double cost ();
-
-    public String description(){
-        return description();
+    public void performBrake(){
+        brake.brake();
     }
 
-    public MainBody getMainBody() {
-        return mainBody;
+    public void performGear(){
+        gear.gear();
     }
 
-    public void setMainBody(MainBody mainBody) {
-        this.mainBody = mainBody;
+    public void performEngineCylinders(){
+        engine.getEngineCylindersType();
     }
 
-    public Brake getBrake() {
-        return brake;
-    }
-
-    public void setBrake(Brake brake) {
-        this.brake = brake;
-    }
-
-    public Gear getGear() {
-        return gear;
-    }
-
-    public void setGear(Gear gear) {
-        this.gear = gear;
-    }
-
-    public Engine getEngine() {
-        return engine;
-    }
-
-    public void setEngine(Engine engine) {
-        this.engine = engine;
+    public void performEngineFuel(){
+        engine.getEngineFuelType();
     }
 
     @Override
