@@ -6,25 +6,27 @@ import com.company.enginetypes.EnginesReactType;
 
 public abstract class Car {
 
+    //engine interface for strategy pattern
     private MainBody mainBody;
-    private Brake brake;
-    private Gear gear;
-
-    private int enginePower = 100; // 100hp default
-    private int engineCapacity;//2925 cc
+    Brake brake;
+     Gear gear;
 
     private EngineFuelType engineFuelType;
     private EnginesReactType enginesReactType;
     private EngineCylindersType engineCylindersType;
 
+    private int enginePower = 100; // 100hp default
+    private int engineCapacity;//2925 cc
+
+    //decorator pattern description part and cost part
     String description="Unknown description";
-
-
     public abstract double cost();
 
+    //strategy pattern, this method for change interface method
     public void performBrake(){
         brake.brake();
     }
+    public void performGear(){gear.gear();};
     public void performEngineFuelType(){
         engineFuelType.fuelType();
     }
@@ -47,16 +49,17 @@ public abstract class Car {
         return brake;
     }
 
-    public void setBrake(Brake brake) {
-        this.brake = brake;
+    public void setBrake(Brake b) {
+
+        this.brake = b;
     }
 
     public Gear getGear() {
         return gear;
     }
 
-    public void setGear(Gear gear) {
-        this.gear = gear;
+    public void setGear(Gear g) {
+        this.gear = g;
     }
 
     public int getEnginePower() {

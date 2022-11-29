@@ -5,6 +5,10 @@ import com.company.*;
 public class CarPlay extends CarExtensionDecorator{
     Car car;
 
+    public CarPlay(Car car){
+        this.car=car;
+    }
+
     @Override
     public double cost() {
         return car.cost() + 500;
