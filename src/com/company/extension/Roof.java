@@ -2,12 +2,12 @@ package com.company.extension;
 
 import com.company.*;
 
-public class Roof extends CarExtensionDecorator{
+public class Roof extends CarExtensionDecorator {
     Car car;
 
-    public Roof(MainBody mainBody, Brake brake, Gear gear, Engine engine, Car car) {
-        super(mainBody, brake, gear, engine);
-        this.car = car;
+
+    public Roof(Car car){
+        this.car=car;
     }
 
 
@@ -17,7 +17,9 @@ public class Roof extends CarExtensionDecorator{
     }
 
     @Override
-    public String description() {
-        return car.description() + " Roof panel added ";
+    public String getDescription() {
+        return car.getDescription() + "Roof panel added";
     }
+
+
 }

@@ -2,19 +2,16 @@ package com.company.extension;
 
 import com.company.*;
 
-public class Sensors extends CarExtensionDecorator{
+public class Sensors extends CarExtensionDecorator {
     Car car;
-    public Sensors(MainBody mainBody, Brake brake, Gear gear, Engine engine) {
-        super(mainBody, brake, gear, engine);
-    }
 
     @Override
     public double cost() {
-        return car.cost() + 950;
+        return car.cost() + 850;
     }
 
     @Override
-    public String description() {
-        return car.description() + "Sensors added";
+    public String getDescription() {
+        return car.getDescription() + "Sensors added";
     }
 }

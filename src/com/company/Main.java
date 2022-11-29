@@ -17,23 +17,33 @@ public class Main {
 
     public static void main(String[] args) {
         //Mercedes S Serisi Model S 400 400 d
-        MainBody mainBody = new MainBody(4, 4, "sedan", 5, "teyp", true, true);
+        /*MainBody mainBody = new MainBody(4, 4, "sedan", 5, "teyp", true, true);
         EngineFuelType engineDiesel = new Diesel();
         EnginesReactType internalCombustionSystem = new InternalCombustionSystem();
         EngineCylindersType fiveCylinderEngine = new FiveCylinderEngine();
         Engine engine = new Engine(200, 2925, engineDiesel, internalCombustionSystem, fiveCylinderEngine);
         Gear automaticGear=new AutomaticGear();
         Gear gear6=new Gear6();
-        Brake brake=new ASRBrakeSystem();
+        Brake brake=new ASRBrakeSystem();*/
 
-        Car mercedesSedan=new Mercedes(mainBody,brake,automaticGear,engine,"S400","s",2022,
-                 "Black",200000,"mercedes");
+        Car car1 = new ToyotaSedan();
+        car1 = new Roof(car1);
+        System.out.println(car1.getDescription() + " $ " + car1.cost());
+
+        Car car2 = new MercedesSedan();
+        car2 = new Roof(car2);
+        System.out.println(car2.getDescription() + " $ " + car2.cost());
 
 
-        Car car1=new Roof(mercedesSedan.getMainBody(), mercedesSedan.getBrake(),mercedesSedan.getGear(),mercedesSedan.getEngine(),mercedesSedan);
+
+    /*    Car mercedesSedan=new Mercedes(mainBody,brake,automaticGear,engine,"S400","s",2022,
+                 "Black",200000,"mercedes");*/
+
+
+      /*  Car car1=new Roof(mercedesSedan.getMainBody(), mercedesSedan.getBrake(),mercedesSedan.getGear(),mercedesSedan.getEngine(),mercedesSedan);
         System.out.println(mercedesSedan);
         System.out.println(car1.description()+ car1.cost());
-        System.out.println(mercedesSedan.cost());
+        System.out.println(mercedesSedan.cost());*/
 
 
         /*System.out.println( mercedesSedan.getEngine());

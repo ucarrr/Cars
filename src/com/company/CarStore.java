@@ -1,19 +1,16 @@
 package com.company;
 
-public class CarAssembly {
+public abstract class CarStore{
+
+    private Car car;
+
     private MainBody mainBody;
     private Brake brake;
     private Gear gear;
     private Engine engine;
-    private Car car;
 
-    public CarAssembly(MainBody mainBody, Brake brake, Gear gear, Engine engine, Car car) {
-        this.mainBody = mainBody;
-        this.brake = brake;
-        this.gear = gear;
-        this.engine = engine;
-        this.car = car;
-    }
+
+    public abstract Car createCar(String type); //eklenen yer
 
     public MainBody getMainBody() {
         return mainBody;
