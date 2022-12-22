@@ -1,9 +1,9 @@
 package com.company.extension;
 
-import com.company.*;
+import com.company.factory.Car;
 
 public abstract class CarExtensionDecorator extends Car {
 
-    public abstract String getDescription();
+    public abstract String getName();
 
 }

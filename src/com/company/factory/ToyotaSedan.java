@@ -1,9 +1,9 @@
-package com.company;
+package com.company.factory;
 
-public class ToyotaSedan extends Car{
+public class ToyotaSedan extends Car {
 
     public ToyotaSedan(){
-        description = " Toyota sedan ";
+        //name = " Toyota sedan ";
     }
 
     @Override

@@ -1,6 +1,6 @@
 package com.company.extension;
 
-import com.company.*;
+import com.company.factory.Car;
 
 public class Roof extends CarExtensionDecorator {
     Car car;
@@ -17,8 +17,8 @@ public class Roof extends CarExtensionDecorator {
     }
 
     @Override
-    public String getDescription() {
-        return car.getDescription() + "Roof panel added";
+    public String getName() {
+        return car.getName() + "Roof panel added";
     }
 
 

@@ -1,5 +1,5 @@
 package com.company.extension;
-import com.company.*;
+import com.company.factory.Car;
 
 
 public class CarPlay extends CarExtensionDecorator{
@@ -15,7 +15,7 @@ public class CarPlay extends CarExtensionDecorator{
     }
 
     @Override
-    public String getDescription() {
-        return car.getDescription()+ " CarPlay added ";
+    public String getName() {
+        return car.getName()+ " CarPlay added ";
     }
 }

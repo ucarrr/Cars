@@ -6,17 +6,17 @@ public class MainBody {
     private final boolean accelerator = true;
     private int doorNumber;
     private int numberOfSeat;
-    private String bodyType; //sedan etc.
+    //private String bodyType; //sedan etc.
     private int gasTank;
     private String carStereo;
     private boolean Trunk; //Bagaj
     private boolean airbag;
 
-    public MainBody(int doorNumber, int numberOfSeat, String bodyType,
+    public MainBody(int doorNumber, int numberOfSeat,
                     int gasTank, String carStereo, boolean trunk, boolean airbag) {
         this.doorNumber = doorNumber;
         this.numberOfSeat = numberOfSeat;
-        this.bodyType = bodyType;
+
         this.gasTank = gasTank;
         this.carStereo = carStereo;
         Trunk = trunk;
@@ -51,13 +51,7 @@ public class MainBody {
         this.numberOfSeat = numberOfSeat;
     }
 
-    public String getBodyType() {
-        return bodyType;
-    }
 
-    public void setBodyType(String bodyType) {
-        this.bodyType = bodyType;
-    }
 
     public int getGasTank() {
         return gasTank;
@@ -99,7 +93,7 @@ public class MainBody {
                 ", accelerator=" + accelerator +
                 ", doorNumber=" + doorNumber +
                 ", numberOfSeat=" + numberOfSeat +
-                ", bodyType='" + bodyType + '\'' +
+
                 ", gasTank=" + gasTank +"lt" +
                 ", carStereo='" + carStereo + '\'' +
                 ", Trunk=" + Trunk +

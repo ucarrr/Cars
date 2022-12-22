@@ -1,5 +1,8 @@
-package com.company;
+package com.company.factory;
 
+import com.company.Brake;
+import com.company.Gear;
+import com.company.MainBody;
 import com.company.enginetypes.EngineCylindersType;
 import com.company.enginetypes.EngineFuelType;
 import com.company.enginetypes.EnginesReactType;
@@ -8,8 +11,9 @@ public abstract class Car {
 
     //engine interface for strategy pattern
     private MainBody mainBody;
-    Brake brake;
-     Gear gear;
+    private Brake brake;
+    private Gear gear;
+
 
     private EngineFuelType engineFuelType;
     private EnginesReactType enginesReactType;
@@ -19,8 +23,38 @@ public abstract class Car {
     private int engineCapacity;//2925 cc
 
     //decorator pattern description part and cost part
-    String description="Unknown description";
-    public abstract double cost();
+    String name ="Unknown description";
+
+
+    public Car(String name, MainBody mainBody, Brake brake, Gear gear, EngineFuelType engineFuelType,
+               EnginesReactType enginesReactType, EngineCylindersType engineCylindersType,
+               int enginePower, int engineCapacity) {
+        this.mainBody = mainBody;
+        this.brake = brake;
+        this.gear = gear;
+        this.engineFuelType = engineFuelType;
+        this.enginesReactType = enginesReactType;
+        this.engineCylindersType = engineCylindersType;
+        this.enginePower = enginePower;
+        this.engineCapacity = engineCapacity;
+        this.name = name;
+    }
+    public Car(){
+
+    }
+
+    public Car(String name, MainBody mainBody, Brake brake, Gear gear, EngineFuelType engineFuelType,
+               EngineCylindersType engineCylindersType,
+               int enginePower, int engineCapacity) {
+        this.mainBody = mainBody;
+        this.brake = brake;
+        this.gear = gear;
+        this.engineFuelType = engineFuelType;
+        this.engineCylindersType = engineCylindersType;
+        this.enginePower = enginePower;
+        this.engineCapacity = engineCapacity;
+        this.name = name;
+    }
 
     //strategy pattern, this method for change interface method
     public void performBrake(){
@@ -102,11 +136,22 @@ public abstract class Car {
         this.engineCylindersType = engineCylindersType;
     }
 
-    public String getDescription() {
-        return description;
+    public String getName() {
+        return name;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public abstract double cost();
+
+    public void sale() {
+        System.out.println("Total Cost" + cost());
+
+    }
+
+    public void prepare() {
+        System.out.println("Preparing" + name);
     }
 }

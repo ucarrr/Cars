@@ -1,6 +1,6 @@
 package com.company.extension;
 
-import com.company.*;
+import com.company.factory.Car;
 
 public class ParkingAssistSystem extends CarExtensionDecorator {
     Car car;
@@ -12,7 +12,7 @@ public class ParkingAssistSystem extends CarExtensionDecorator {
     }
 
     @Override
-    public String getDescription() {
-        return car.getDescription() + "Parking Assist System added";
+    public String getName() {
+        return car.getName() + "Parking Assist System added";
     }
 }
