@@ -147,11 +147,11 @@ public abstract class Car {
     public abstract double cost();
 
     public void sale() {
-        System.out.println("Total Cost" + cost());
+        System.out.println("Total Cost " + cost());
 
     }
 
     public void prepare() {
-        System.out.println("Preparing" + name);
+        System.out.println("Preparing " + name);
     }
 }
