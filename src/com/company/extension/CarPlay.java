@@ -7,9 +7,10 @@ public class CarPlay extends CarExtensionDecorator {
     Car car;
 
     public CarPlay(Car car) {
-        this.car = car;
-        this.setMainBody(car.getMainBody());
+        super(car);
+        this.car=car;
     }
+
 
     @Override
     public double cost() {

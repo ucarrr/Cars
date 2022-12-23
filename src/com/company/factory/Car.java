@@ -39,22 +39,19 @@ public abstract class Car {
         this.engineCapacity = engineCapacity;
         this.name = name;
     }
-    public Car(){
-
+    public Car(Car car){
+        this.mainBody = car.getMainBody();
+        this.brake = car.getBrake();
+        this.gear = car.getGear();
+        this.engineFuelType = car.getEngineFuelType();
+        this.enginesReactType=car.getEnginesReactType();
+        this.engineCylindersType = car.getEngineCylindersType();
+        this.enginePower = car.getEnginePower();
+        this.engineCapacity = car.getEngineCapacity();
+        this.name = car.getName();
     }
 
-    public Car(String name, MainBody mainBody, Brake brake, Gear gear, EngineFuelType engineFuelType,
-               EngineCylindersType engineCylindersType,
-               int enginePower, int engineCapacity) {
-        this.mainBody = mainBody;
-        this.brake = brake;
-        this.gear = gear;
-        this.engineFuelType = engineFuelType;
-        this.engineCylindersType = engineCylindersType;
-        this.enginePower = enginePower;
-        this.engineCapacity = engineCapacity;
-        this.name = name;
-    }
+
 
     //strategy pattern, this method for change interface method
     public void performBrake(){

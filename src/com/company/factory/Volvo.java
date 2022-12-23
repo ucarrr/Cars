@@ -14,7 +14,7 @@ public class Volvo extends CarStore{
                     externalCombustionSystem,eightCylinderEngine,5000,8000);
         } else if (type.equals("electric")) {
             return new VolvoElectric("electric",mainBody,absBrakeSystem,automaticGear,
-                    fuelTypeElectric,eightCylinderEngine,5000,6000);
+                    fuelTypeElectric,externalCombustionSystem,eightCylinderEngine,5000,6000);
         }  else return null;
     }
 }

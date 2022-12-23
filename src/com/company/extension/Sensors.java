@@ -5,6 +5,11 @@ import com.company.factory.Car;
 public class Sensors extends CarExtensionDecorator {
     Car car;
 
+    public Sensors(Car car) {
+        super(car);
+    }
+
+
     @Override
     public double cost() {
         return car.cost() + 850;

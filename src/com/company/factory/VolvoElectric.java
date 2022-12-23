@@ -10,8 +10,8 @@ import com.company.enginetypes.EnginesReactType;
 public class VolvoElectric extends Car {
 
 
-    public VolvoElectric(String name, MainBody mainBody, Brake brake, Gear gear, EngineFuelType engineFuelType, EngineCylindersType engineCylindersType, int enginePower, int engineCapacity) {
-        super(name, mainBody, brake, gear, engineFuelType, engineCylindersType, enginePower, engineCapacity);
+    public VolvoElectric(String name, MainBody mainBody, Brake brake, Gear gear, EngineFuelType engineFuelType, EnginesReactType enginesReactType, EngineCylindersType engineCylindersType, int enginePower, int engineCapacity) {
+        super(name, mainBody, brake, gear, engineFuelType, enginesReactType, engineCylindersType, enginePower, engineCapacity);
     }
 
     @Override

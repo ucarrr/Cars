@@ -5,6 +5,10 @@ import com.company.factory.Car;
 public class ParkingAssistSystem extends CarExtensionDecorator {
     Car car;
 
+    public ParkingAssistSystem(Car car) {
+        super(car);
+    }
+
 
     @Override
     public double cost() {

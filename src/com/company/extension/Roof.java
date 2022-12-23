@@ -5,9 +5,8 @@ import com.company.factory.Car;
 public class Roof extends CarExtensionDecorator {
     Car car;
 
-
-    public Roof(Car car){
-        this.car=car;
+    public Roof(Car car) {
+        super(car);
     }
 
 
