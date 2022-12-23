@@ -4,23 +4,22 @@ public class MainBody {
     private final int numberOfWheels = 4;
     private final boolean seatBelt = true;
     private final boolean accelerator = true;
+    private final boolean airbag = true;
     private int doorNumber;
     private int numberOfSeat;
     //private String bodyType; //sedan etc.
     private int gasTank;
     private String carStereo;
     private boolean Trunk; //Bagaj
-    private boolean airbag;
+
 
     public MainBody(int doorNumber, int numberOfSeat,
-                    int gasTank, String carStereo, boolean trunk, boolean airbag) {
+                    int gasTank, String carStereo, boolean trunk) {
         this.doorNumber = doorNumber;
         this.numberOfSeat = numberOfSeat;
-
         this.gasTank = gasTank;
         this.carStereo = carStereo;
         Trunk = trunk;
-        this.airbag = airbag;
     }
 
     public int getNumberOfWheels() {
@@ -52,7 +51,6 @@ public class MainBody {
     }
 
 
-
     public int getGasTank() {
         return gasTank;
     }
@@ -81,23 +79,20 @@ public class MainBody {
         return airbag;
     }
 
-    public void setAirbag(boolean airbag) {
-        this.airbag = airbag;
-    }
+
+
 
     @Override
     public String toString() {
-        return "MainBody{" +
-                "numberOfWheels=" + numberOfWheels +
-                ", seatBelt=" + seatBelt +
-                ", accelerator=" + accelerator +
-                ", doorNumber=" + doorNumber +
-                ", numberOfSeat=" + numberOfSeat +
-
-                ", gasTank=" + gasTank +"lt" +
-                ", carStereo='" + carStereo + '\'' +
-                ", Trunk=" + Trunk +
-                ", airbag=" + airbag +
-                '}';
+        return "MainBody = " +
+                "numberOfWheels = " + numberOfWheels +
+                ", seatBelt = " + seatBelt +
+                ", accelerator = " + accelerator +
+                ", doorNumber = " + doorNumber +
+                ", numberOfSeat = " + numberOfSeat +
+                ", gasTank = " + gasTank + " lt " +
+                ", carStereo = " + carStereo + '\'' +
+                ", Trunk = " + Trunk +
+                ", airbag = " + airbag;
     }
 }

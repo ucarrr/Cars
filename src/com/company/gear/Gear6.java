@@ -6,4 +6,5 @@ public class Gear6 extends ManuelGear{
         super.gear();
         System.out.println("Car has 6 gear");
     }
+
 }

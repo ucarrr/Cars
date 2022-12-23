@@ -154,4 +154,22 @@ public abstract class Car {
     public void prepare() {
         System.out.println("Preparing " + name);
     }
+
+
+    public void displayCar(){
+
+      System.out.println("Car = " +  getName());
+      getMainBody().toString();
+      System.out.println(getMainBody().toString());
+      getBrake().brake();
+      getGear().gear();
+      getEngineFuelType().fuelType();
+      getEnginesReactType().reactType();
+      getEngineCylindersType().cylindersType();
+      System.out.println("enginePower = " + getEnginePower() +
+              ", engineCapacity = " + getEngineCapacity());
+    }
+
+
+
 }

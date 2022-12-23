@@ -24,9 +24,10 @@ import com.company.gear.Gear6;
 
 public abstract class CarStore {
 
-    MainBody mainBody=new MainBody(4,4,8,"android",true,true);
-    MainBody mainBody2=new MainBody(2,2,7,"Digital",false,true);
-    MainBody mainBody3=new MainBody(4,6,10,"Digital",true,true);
+    MainBody mainBody=new MainBody(5,4,8,"android",true);
+    MainBody mainBody2=new MainBody(3,2,7,"Digital",false);
+    MainBody mainBody3=new MainBody(5,6,10,"Digital",true);
+    MainBody mainBody4=new MainBody(5,6,10,"Digital",true);
 
     Brake absBrakeSystem= new ABSBrakeSystem();
     Brake espBrakeSystem=new ESPBrakeSystem();

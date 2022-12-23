@@ -6,4 +6,6 @@ public abstract class CarExtensionDecorator extends Car {
 
     public abstract String getName();
 
+    public CarExtensionDecorator() {
+    }
 }

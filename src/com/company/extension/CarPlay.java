@@ -1,12 +1,14 @@
 package com.company.extension;
+
 import com.company.factory.Car;
 
 
-public class CarPlay extends CarExtensionDecorator{
+public class CarPlay extends CarExtensionDecorator {
     Car car;
 
-    public CarPlay(Car car){
-        this.car=car;
+    public CarPlay(Car car) {
+        this.car = car;
+        this.setMainBody(car.getMainBody());
     }
 
     @Override
@@ -16,6 +18,6 @@ public class CarPlay extends CarExtensionDecorator{
 
     @Override
     public String getName() {
-        return car.getName()+ " CarPlay added ";
+        return car.getName() + " CarPlay added ";
     }
 }
