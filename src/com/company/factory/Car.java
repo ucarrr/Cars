@@ -49,6 +49,7 @@ public abstract class Car {
         this.enginePower = car.getEnginePower();
         this.engineCapacity = car.getEngineCapacity();
         this.name = car.getName();
+
     }
 
 
@@ -164,7 +165,7 @@ public abstract class Car {
       getEnginesReactType().reactType();
       getEngineCylindersType().cylindersType();
       System.out.println("enginePower = " + getEnginePower() +
-              ", engineCapacity = " + getEngineCapacity());
+              ", engineCapacity = " + getEngineCapacity() + " Cost = "+ cost());
     }
 
 
