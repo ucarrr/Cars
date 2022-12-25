@@ -19,6 +19,6 @@ public class CarPlay extends CarExtensionDecorator {
 
     @Override
     public String getName() {
-        return car.getName() + " CarPlay added ";
+        return car.getName() + " CarPlay added";
     }
 }

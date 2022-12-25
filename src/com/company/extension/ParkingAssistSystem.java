@@ -7,6 +7,7 @@ public class ParkingAssistSystem extends CarExtensionDecorator {
 
     public ParkingAssistSystem(Car car) {
         super(car);
+        this.car=car;
     }
 
 
@@ -17,6 +18,6 @@ public class ParkingAssistSystem extends CarExtensionDecorator {
 
     @Override
     public String getName() {
-        return car.getName() + "Parking Assist System added";
+        return car.getName() + " Parking Assist System added";
     }
 }

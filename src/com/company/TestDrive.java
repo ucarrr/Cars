@@ -23,6 +23,7 @@ public class TestDrive {
         //strategy pattten
         System.out.println("Strategy pattern");
         mercedesHybrid.performGear();
+
         //runtime
         mercedesHybrid.setGear(new AutomaticGear());
         mercedesHybrid.performGear();

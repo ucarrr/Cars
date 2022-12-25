@@ -7,6 +7,7 @@ public class Roof extends CarExtensionDecorator {
 
     public Roof(Car car) {
         super(car);
+        this.car=car;
     }
 
 
@@ -17,7 +18,7 @@ public class Roof extends CarExtensionDecorator {
 
     @Override
     public String getName() {
-        return car.getName() + "Roof panel added";
+        return car.getName() + " Roof panel added";
     }
 
 

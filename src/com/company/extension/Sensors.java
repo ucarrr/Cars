@@ -7,6 +7,7 @@ public class Sensors extends CarExtensionDecorator {
 
     public Sensors(Car car) {
         super(car);
+        this.car=car;
     }
 
 
@@ -17,6 +18,6 @@ public class Sensors extends CarExtensionDecorator {
 
     @Override
     public String getName() {
-        return car.getName() + "Sensors added";
+        return car.getName() + " Sensors added";
     }
 }
