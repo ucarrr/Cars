@@ -3,6 +3,5 @@
 
 <p>Strategy Patttern</p>
 <p>Decorator Pattern</p>
-<p>Observer Pattern</p>
-<p>Factory</p> 
+<p>Factory Method pattern</p> 
 
